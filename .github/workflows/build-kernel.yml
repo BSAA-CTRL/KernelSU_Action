@@ -16,10 +16,10 @@ jobs:
       run: |
         CONFIG_ENV=$(grep -w "CONFIG_ENV" config.env | head -n 1 | cut -d "=" -f 2)
         CONFIG_LIST=(
-            KERNEL_SOURCE
-            KERNEL_SOURCE_BRANCH
-            KERNEL_CONFIG
-            KERNEL_IMAGE_NAME
+            KERNEL_SOURCE\https://github.com/BSAA-CTRL/xiaomi10
+            KERNEL_SOURCE_BRANCHthirteen
+            KERNEL_CONFIGthyme_stock-defconfig
+            KERNEL_IMAGE_NAMEImage
             ARCH
             ADD_LOCALVERSION_TO_FILENAME
             EXTRA_CMDS
